@@ -1,0 +1,80 @@
+
+<br>
+<div class="container" >
+   <div class="row">
+<div style="text-align:center;width:100%">
+
+       
+           
+                <button  type="button" (click)="test()" class="btn btn-elegant waves-light btn-sm" mdbRippleRadius>Suiveur</button>
+       
+         
+                <button type="button" (click)="getD()" class="btn btn-elegant waves-light btn-sm" mdbRippleRadius>GetD</button>
+       
+         
+                <button type="button" class="btn btn-elegant waves-light btn-sm" mdbRippleRadius>Comming Soon</button>
+     
+  </div>
+</div>
+
+</div>      
+<hr>
+<div class=" container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="jumbotron">
+        <h5  style="font-weight:bold"> Functions Executed</h5>
+        <hr>
+        <p style="color:white" ><span *ngFor = " let m of msg" style="background-color: #000000 !important;" class="badge">{{m}}&nbsp;</span>&nbsp;</p>
+        
+      </div>
+    </div>
+  <div class="col-md-4">
+<div class=" all jumbotron ">
+
+  
+    <br>
+    
+  
+
+<nav >
+  <ul class="pagination pagination-circle ">
+      <!--First-->
+     
+      <!--Numbers-->
+      <li  class=" page-item white"><a class="page-link" mdbRippleRadius>&nbsp;&nbsp;</a></li>&nbsp;&nbsp;&nbsp;
+      <li [ngClass]="capt[0] === '1' ? 'black' : 'white'" class="page-item  "><a class="page-link" mdbRippleRadius>&nbsp;&nbsp;</a></li>&nbsp;&nbsp;&nbsp;
+      <li [ngClass]="capt[1] === '1' ? 'black' : 'white'" class="page-item  "><a class="page-link" mdbRippleRadius>&nbsp;&nbsp;</a></li>&nbsp;&nbsp;&nbsp;
+      <li [ngClass]="capt[2] === '1' ? 'black' : 'white'" class="page-item  "><a class="page-link" mdbRippleRadius>&nbsp;&nbsp;</a></li>&nbsp;&nbsp;&nbsp;
+      <li [ngClass]="capt[3] === '1' ? 'black' : 'white'" class="page-item "><a class="page-link" mdbRippleRadius>&nbsp;&nbsp;</a></li>&nbsp;&nbsp;&nbsp;
+      
+      <li class=" page-item white "><a class="page-link" mdbRippleRadius>&nbsp;&nbsp;</a></li>
+  </ul>
+</nav>
+<!--/Pagination -->
+
+
+      
+        <br>
+    
+<img style="height: 350px;" class="img-fluid" src="assets/suiveurCar.png">
+   
+  
+</div>
+</div>
+<div class="col-md-4">
+    <div class="jumbotron">
+        <p style="font-weight: bold" >Avancer : <span class="badge indigo">{{numAV}}</span> </p>
+        <hr>
+      <p style="font-weight: bold" >Right 90 : <span class="badge indigo">{{numTDD}}</span>  </p>
+      <hr>
+       <p style="font-weight: bold" >Left 90 : <span class="badge indigo">{{numTGG}}</span> </p> 
+       <hr>
+       <p style="font-weight: bold" >Right : <span class="badge indigo">{{numTD}}</span> </p> 
+       <hr>
+       <p style="font-weight: bold" >Left : <span class="badge indigo">{{numTG}}</span> </p> 
+       <hr>
+    </div>
+  </div>
+</div>
+</div>
